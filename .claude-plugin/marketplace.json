@@ -1,0 +1,16 @@
+{
+  "name": "ranksmile",
+  "owner": {
+    "name": "Ranksmile",
+    "url": "https://ranksmile.pl"
+  },
+  "description": "Ranksmile's Claude Code plugin marketplace.",
+  "plugins": [
+    {
+      "name": "ranksmile",
+      "source": "./plugins/ranksmile",
+      "description": "Your Ranksmile content scores, AI visibility, rankings, Search Console and site audit in your agent, with workflows that turn them into edits.",
+      "category": "SEO"
+    }
+  ]
+}
