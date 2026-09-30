@@ -21,4 +21,4 @@ description: "Explain why a Ranksmile article's content score is low and list th
 - Say which numbers come from the tools and which are your judgement.
 - The Ranksmile MCP server cannot edit articles. Hand the edits to the user, or suggest asking Smily in the editor.
 - If you learned a durable fact about the business, confirm it with the user, then add it with `workspace__update_context` and `append_brand_knowledge`, which keeps the existing notes. Never send `brand_knowledge` for an addition: that replaces everything the user wrote.
-- If `workspace__update_context` is not in your tool list, the connection is read-only. Skip the write-back and tell the user they can reconnect Ranksmile and tick "Also allow updates".
+- If `workspace__update_context` is not in your tool list, the connection is read-only or Brand context was not allowed. Skip the write-back and tell the user they can reconnect Ranksmile and choose "Read and write" with Brand context.
