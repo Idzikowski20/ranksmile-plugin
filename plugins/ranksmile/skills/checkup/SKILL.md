@@ -21,7 +21,7 @@ Read-only. Diagnose and rank; never change anything except one research-log entr
 Score each check, with the evidence. P0 blocks valid measurement, P1 skews it, P2 is nice to have.
 - **Competitors are buyer alternatives** (P0): tracked competitors or the most-named brands include software tools (Semrush, Ahrefs, Sistrix, Senuto, Surfer, Yoast, Screaming Frog) for a business that does not sell software. They distort the share of voice.
 - **Invisible competitors** (P1): brands in `competitors` with a high `mention_rate` that are not `tracked`. Name them.
-- **Intent balance** (P1): any intent under 20% or over 50% of the prompts; prompts with no intent.
+- **Intent balance** (P1): among prompts that have an intent, any of informational / commercial / transactional under 20% or over 50%. Prompts with no intent are their own finding.
 - **Prompt mass** (P1): under 20 prompts, or a topic with fewer than 2.
 - **Topics slice the business** (P2): topics that are pure themes ("SEO", "AI") with one prompt each give nothing to compare.
 - **Tags** (P2): no tags at all means no way to slice by offer or persona.

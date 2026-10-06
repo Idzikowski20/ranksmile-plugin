@@ -28,6 +28,8 @@ Higher tier wins; one tier per cycle.
 
 A tier whose signal needs a tool that is not in your tool list (Articles for tier 5, Actions for tiers 4 and 6) is not "no signal": say which category the connection left out, judge the tier on what you can see, and never read a missing `article__list` as "no article exists".
 
+Tier 1 is an exit: report what data is missing and when the next scan is due, then stop. No checkup override, no decision, no log entry, no handoff.
+
 If two tiers tie, take the lower number. If the checkup's #1 improvement maps to a different tier than the ladder picked, prefer the checkup's #1 and say so.
 
 ## 3. Decide

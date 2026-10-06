@@ -12,22 +12,23 @@ description: "Find the questions where AI answers (ChatGPT, Perplexity, Gemini, 
 
 ## Workflow
 1. `visibility__overview`: `overview` is the brand score, `topics` come weakest first, and `prompts` least-mentioned first. Prompts at `mention_rate` 0 with `brands_named` are the gaps. If `overview` is null, no scan has finished yet: say so and stop. If the user named a prompt or topic, work on that; otherwise take the weakest topic.
-2. For the top three gap prompts, `visibility__prompt`:
+2. For up to three gap prompts within that scope (the named prompt, or the chosen topic; fewer if it has fewer), `visibility__prompt`:
    - `brands` and their `quotes`: what the answers say about the winners. That is the claim to beat.
    - `citations`: the pages the answer leans on.
    - `fan_out_queries`: what the engine actually searched. These are the sub-questions the content must answer.
    - `advice`, when present: Ranksmile's stored "how to get cited". Build on it rather than contradict it.
-   - The wording of the answers and the fan-out is how buyers phrase it: use it verbatim in headings.
-3. `visibility__sources` with `gap_only: true`. Decide by the page `type`:
+   - The wording of the answers and the fan-out are candidate phrasing, not proof of how buyers talk: use them as sub-questions, check them against Search Console queries (`gsc__performance`) where you can, and write headings in natural language.
+3. `visibility__sources` with `gap_only: true`, kept to the pages the selected prompts' answers cite (their `citations` above): a gap page from another topic belongs to another plan. Decide by the page `type`:
    - **Competitor**, or an article or how-to on any site → own content: write or improve a page that answers the same question better.
    - **Editorial** (lists, rankings, reviews) → get included: hand to `citation-outreach`.
-   - **UGC** (Reddit, forums, YouTube) → take part in the thread, from a personal account that says you work for or with the brand, within the community's self-promotion rules.
+   - **UGC** (Reddit, forums, YouTube) → draft an answer for the user to post from a personal account that says they work for or with the brand, within the community's self-promotion rules. Never post anything yourself.
    - **Reference** / **Institutional** → a correct, sourced entry is the target, not a pitch.
+   - **You**: never a gap, but check the brand's own pages the selected answers cite with `answer_names_brand: false` (in the full `visibility__sources` list): the page is used without the brand being named, so make the brand explicit on it.
 4. For own content: `article__list` to find an article that should answer it, and `article__score` to see how well it does. If those are not in your tool list, the connection left out Articles: say so, and give the brief without saying whether an article exists. `gsc__performance` with `group_by: "query"` shows whether Google already sends traffic for the same question.
 5. `actions__list` with `goal: "owned"`: if an action for this topic exists, use its brief (`actions__get`) instead of writing a new one.
 
 ## Report
-Per topic (at most three):
+For the chosen scope (one topic, or the named prompt):
 - The gap prompts, the brands named instead, and what the answers say about them.
 - One action: improve an existing article (with its `article__score` gaps and the fan-out questions it misses), write a new one, or get onto the listed pages (hand to `citation-outreach`).
 - For a new article, a brief: the target question, the page type (comparison, how-to, list, service page: match the type of the pages that win), a working title (≤ 60 chars), an H2 outline from the fan-out questions, the buyer phrasing to use, and the 4-week metric ("prompt <id>: 0% → mentioned by at least one engine").
