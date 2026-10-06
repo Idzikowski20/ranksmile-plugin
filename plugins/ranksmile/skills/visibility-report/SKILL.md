@@ -20,8 +20,8 @@ At most 400 words. A narrative with numbers, not a dashboard.
 
 ## 2. What was done
 - `actions__list` with `status: "done"`: those with `done_at` inside the window.
-- `article__list`: articles published or updated in the window.
-- `research_log`: the "Next move:", "Outreach batch:" and "AI visibility gaps:" entries in the window.
+- `article__list`: articles published or updated in the window. If it is not in your tool list, the connection left out Articles: say so and attribute without them.
+- `research_log`: the "Next move:", "Outreach sent:" and "AI visibility gaps:" entries in the window (drafts that were never sent are not work done).
 
 ## 3. Attribution
 - Match each piece of work to the prompts it targets: the action's prompts in `actions__get`, the article's topic, and for an outreach target the prompts whose answers cite it (the `citations` in `visibility__prompt`).

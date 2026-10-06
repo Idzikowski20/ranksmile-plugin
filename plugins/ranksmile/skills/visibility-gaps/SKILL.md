@@ -23,7 +23,7 @@ description: "Find the questions where AI answers (ChatGPT, Perplexity, Gemini, 
    - **Editorial** (lists, rankings, reviews) → get included: hand to `citation-outreach`.
    - **UGC** (Reddit, forums, YouTube) → take part in the thread, from a personal account that says you work for or with the brand, within the community's self-promotion rules.
    - **Reference** / **Institutional** → a correct, sourced entry is the target, not a pitch.
-4. For own content: `article__list` to find an article that should answer it, and `article__score` to see how well it does. `gsc__performance` with `group_by: "query"` shows whether Google already sends traffic for the same question.
+4. For own content: `article__list` to find an article that should answer it, and `article__score` to see how well it does. If those are not in your tool list, the connection left out Articles: say so, and give the brief without saying whether an article exists. `gsc__performance` with `group_by: "query"` shows whether Google already sends traffic for the same question.
 5. `actions__list` with `goal: "owned"`: if an action for this topic exists, use its brief (`actions__get`) instead of writing a new one.
 
 ## Report

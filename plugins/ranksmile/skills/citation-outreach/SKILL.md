@@ -9,7 +9,7 @@ description: "Turn the pages AI answers cite for competitors into a short, prior
 Most AI-visibility lift comes from being named on pages the engines already cite. This workflow picks at most five targets a week and writes a specific pitch for each.
 
 ## Before you start
-- `workspace__list`, then `workspace__get_context`. Pitches use `brand_knowledge`; never claim a number or client it does not support. Read earlier "Outreach batch:" entries in `research_log`, so the same target is not pitched twice.
+- `workspace__list`, then `workspace__get_context`. Pitches use `brand_knowledge`; never claim a number or client it does not support. Before drafting for a target, check whether it was already contacted: its Action (`actions__list`) is `in_progress` or `done`, or a "Outreach sent:" entry in `research_log` names it. Only that counts as contacted. An "Outreach drafts:" entry means drafted, not sent: draft it again if it is still the best target, and say it was drafted before. `research_log` holds only the newest 20 entries, so the Action status is the record that lasts.
 - If the brand has nothing to point to yet (no case study, guide or data page), say so and suggest `visibility-gaps` first: a pitch without an asset behind it is noise.
 - If `actions__list` is not in your tool list, this connection was made before Actions existed: say once that reconnecting Ranksmile (Settings → Integrations → MCP) adds it, and continue without the Actions steps. Candidates then come from `visibility__sources` alone.
 
@@ -38,7 +38,7 @@ Write in the page's language.
 - The follow-up rule: one follow-up after 7–10 days, then stop.
 - The success check: re-run `visibility__sources` after 4 weeks and see whether the answers citing the page now name the brand (`answer_names_brand`).
 - Tell the user to mark the matching Actions "In progress" when sent and "Done" when the mention is live: that status is the tracker.
-- Finish with `workspace__update_context` and `append_research_log`: "Outreach batch: <site>. Verdict: <targets pitched>". If that tool is not in your tool list, the connection is read-only: say so once and skip it.
+- Finish with `workspace__update_context` and `append_research_log`: "Outreach drafts: <site>. Verdict: <targets drafted, not yet sent>". When the user later says which ones they sent, append "Outreach sent: <site>. Verdict: <targets>". If that tool is not in your tool list, the connection is read-only: say so once and skip it.
 
 ## Never
 - Send anything yourself. Draft; the user sends.
