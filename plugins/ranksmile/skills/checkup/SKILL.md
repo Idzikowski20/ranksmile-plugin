@@ -31,7 +31,7 @@ Setup health = share of checks passed.
 
 ## 3. Performance now
 From `visibility__overview` and `visibility__sources`:
-- Brand `visibility_score` and `mention_rate`, and the change from the previous `history` point.
+- Brand `visibility_score` and `mention_rate`, and the change from the previous `history` point when there is one (none with a single scan: say so, no delta).
 - Weakest and strongest `topics`; weakest engine in `overview.per_model`.
 - Winning prompts: `mention_rate` over 50 (top 5). Losing prompts: `mention_rate` 0 where a competitor is named (top 5, with `brands_named`).
 - Source base: `distinct_domains` (under 5 is narrow, over 15 healthy) and `type_shares`.
@@ -44,7 +44,7 @@ Rank by impact × effort × fit:
 - effort: a site fix or an edit to an existing page beats one pitch, which beats a new article, which beats a project.
 - fit: it fixes the weakest topic or engine from §3.
 
-Keep five. If setup health is under 80%, at least one of the five is a setup fix: a broken setup makes every other number wrong.
+Keep five. If setup health is under 80%, or any P0 check failed, at least one of the five is a setup fix: a broken setup makes every other number wrong.
 
 For each: one-sentence action, the signal that caused it, the workflow to run next (`visibility-gaps`, `citation-outreach`, `content-refresh`, or the Actions page), effort S/M/L, and the number it should move in 4 weeks.
 

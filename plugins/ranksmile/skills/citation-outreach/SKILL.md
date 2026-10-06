@@ -14,7 +14,7 @@ Most AI-visibility lift comes from being named on pages the engines already cite
 - If `actions__list` is not in your tool list, this connection was made before Actions existed: say once that reconnecting Ranksmile (Settings → Integrations → MCP) adds it, and continue without the Actions steps. Candidates then come from `visibility__sources` alone.
 
 ## 1. Candidates
-- `actions__list` with `goal: "earned"` and `status: "new"`; `actions__get` for each of the top ones (its `pages`, `competitor_evidence`, `steps`).
+- `actions__list` with `goal: "earned"` and `status: "new"`; sort them by `impact`, highest first, and read the top five with `actions__get` (their `pages`, `competitor_evidence`, `steps`).
 - `visibility__sources` with `gap_only: true`: pages cited for competitors, not for the brand.
 
 Merge by URL. Drop pages with an `http_status` of 4xx or 5xx, and pages typed `You` or `Competitor`: those are content work for `visibility-gaps`, not outreach.
