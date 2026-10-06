@@ -10,7 +10,7 @@ Read-only. Diagnose and rank; never change anything except one research-log entr
 
 ## Before you start
 - `workspace__list`, then `workspace__get_context`. If `research_log` holds a checkup for this site under 7 days old and nothing big changed since, show it and ask before redoing it.
-- If `actions__list` is not in your tool list, this connection was made before Actions existed: say once that reconnecting Ranksmile (Settings → Integrations → MCP) adds it, and continue without the Actions steps.
+- If `actions__list` is not in your tool list, this connection was made before Actions existed: say once that reconnecting Ranksmile (Settings → Integrations → AI assistants) adds it, and continue without the Actions steps.
 
 ## 1. Inventory
 `visibility__overview` (page with `offset` while `has_more`). Count: prompts, prompts per `intent` (informational / commercial / transactional / none), topics, tags, tracked competitors (`tracked: true`), engines in `overview.per_model`, `scans_total`, and the days between the first and last `history` point.

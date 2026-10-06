@@ -11,7 +11,7 @@ One decision, one workflow, one measurable 4-week target. Not a dashboard, not a
 ## 1. Read the state
 - `workspace__list`, then `workspace__get_context`. Read the `research_log` entries starting "Next move:" (earlier decisions) and "AI visibility checkup:". If a decision is under 4 weeks old, first check its metric with `visibility__overview` (`history`, the prompt or topic it named) and say whether it moved.
 - Run the `checkup` workflow, but skip its research-log write: this workflow writes one entry at the end. Use its sections as the input below.
-- If `actions__list` is not in your tool list, this connection was made before Actions existed: say once that reconnecting Ranksmile (Settings → Integrations → MCP) adds it, and continue without the Actions steps. Tier 4 then cannot fire (its only signal is the site actions), and tier 6 rests on `distinct_domains` from `visibility__sources` alone.
+- If `actions__list` is not in your tool list, this connection was made before Actions existed: say once that reconnecting Ranksmile (Settings → Integrations → AI assistants) adds it, and continue without the Actions steps. Tier 4 then cannot fire (its only signal is the site actions), and tier 6 rests on `distinct_domains` from `visibility__sources` alone.
 
 ## 2. Find the gap
 The lowest tier number is the highest priority and wins; one tier per cycle.

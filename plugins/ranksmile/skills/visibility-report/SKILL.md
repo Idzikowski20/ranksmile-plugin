@@ -11,7 +11,7 @@ At most 400 words. A narrative with numbers, not a dashboard.
 ## Before you start
 - `workspace__list`, then `workspace__get_context`. The last "AI visibility report:" entry in `research_log` is the baseline date; without one, use the oldest `history` point.
 - `visibility__overview`: if `scans_total` is under 2, say there is too little signal yet and stop. `history` holds the last 12 scans, which at a daily cadence is under two weeks: when it starts after the window does, say how far back the trend reaches and use the logged baseline for the rest.
-- If `actions__list` is not in your tool list, this connection was made before Actions existed: say once that reconnecting Ranksmile (Settings → Integrations → MCP) adds it, and continue without the Actions steps.
+- If `actions__list` is not in your tool list, this connection was made before Actions existed: say once that reconnecting Ranksmile (Settings → Integrations → AI assistants) adds it, and continue without the Actions steps.
 
 ## 1. What moved
 - Brand `visibility_score` and `mention_rate` over the window: the logged baseline score and mention rate against now (an older entry without a mention rate gives the score only), or the first against the last `history` point when the history covers the window.

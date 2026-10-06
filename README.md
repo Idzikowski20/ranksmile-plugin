@@ -29,7 +29,7 @@ The first time the assistant uses Ranksmile, your browser opens a consent screen
 
 On the consent screen you choose which workspaces and tool categories the plugin can use. With **Read and write** (the default when the plugin asks for it) and Brand context allowed, the workflows can also add to your brand notes and save what they found to the research log; **Read only** keeps them to reading. The plugin never edits, publishes or deletes articles, and it never sends anything on your behalf: outreach is drafted for you to send. A connection made before the Actions category existed doesn't include it; reconnect to add it.
 
-Other assistants (Cursor, Codex, Claude Desktop) connect with the MCP URL from Ranksmile, under **Settings > Integrations > MCP**.
+Other assistants (Cursor, Codex, Claude Desktop) connect with the MCP URL from Ranksmile, under **Settings > Integrations > AI assistants**.
 
 ## Third-party notices
 

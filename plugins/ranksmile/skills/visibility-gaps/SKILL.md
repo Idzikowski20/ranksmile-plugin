@@ -8,7 +8,7 @@ description: "Find the questions where AI answers (ChatGPT, Perplexity, Gemini, 
 
 ## Before you start
 - `workspace__list`, then `workspace__get_context`. `brand_knowledge` says what the brand can credibly claim. `research_log` entries under 30 days old can be reused.
-- If `actions__list` is not in your tool list, this connection was made before Actions existed: say once that reconnecting Ranksmile (Settings → Integrations → MCP) adds it, and continue without the Actions steps.
+- If `actions__list` is not in your tool list, this connection was made before Actions existed: say once that reconnecting Ranksmile (Settings → Integrations → AI assistants) adds it, and continue without the Actions steps.
 
 ## Workflow
 1. `visibility__overview`: `overview` is the brand score, `topics` come weakest first, and `prompts` least-mentioned first. Prompts at `mention_rate` 0 with `brands_named` are the gaps. If `overview` is null, no scan has finished yet: say so and stop. If the user named a prompt or topic, work on that; otherwise take the weakest topic.
