@@ -14,7 +14,7 @@ At most 400 words. A narrative with numbers, not a dashboard.
 - If `actions__list` is not in your tool list, this connection was made before Actions existed: say once that reconnecting Ranksmile (Settings → Integrations → MCP) adds it, and continue without the Actions steps.
 
 ## 1. What moved
-- Brand `visibility_score` and `mention_rate` over the window: the logged baseline score against now, or the first against the last `history` point when the history covers the window.
+- Brand `visibility_score` and `mention_rate` over the window: the logged baseline score and mention rate against now (an older entry without a mention rate gives the score only), or the first against the last `history` point when the history covers the window.
 - Per topic over the window: compare with the topic rates logged in the last report entry. A topic with no logged rate has no baseline: say so, and do not call it new or a gain.
 - Latest-scan movement, labelled as such: per prompt and topic, `mention_rate` against `previous_mention_rate`. It is one scan's change, not the window's.
 
@@ -48,7 +48,7 @@ Use this shape:
 - …
 ```
 
-- Finish with `workspace__update_context` and `append_research_log`: "AI visibility report: <site>. Verdict: <headline>; baseline score <Y>, topics <topic=rate, …>" with every topic, written short (`solar=12`), so the next report has a baseline for each. If they do not fit in 500 characters, keep the topics with the most prompts and say in the report which ones the next one will lack. If that tool is not in your tool list, the connection is read-only: say so once and show the line for the user to keep.
+- Finish with `workspace__update_context` and `append_research_log`: "AI visibility report: <site>. Verdict: <headline>; baseline score <Y>, mention <M>%, topics <topic=rate, …>" with every topic, written short (`solar=12`), so the next report has a baseline for each. If they do not fit in 500 characters, keep the topics with the most prompts and say in the report which ones the next one will lack. If that tool is not in your tool list, the connection is read-only: say so once and show the line for the user to keep.
 
 ## Never
 - Skip the baseline drift, or the "Stop doing" line.
