@@ -1,6 +1,6 @@
 # Ranksmile for Claude Code
 
-Connects Claude Code to your [Ranksmile](https://ranksmile.pl) account through the Ranksmile MCP server, and adds seven SEO workflows that tell the assistant which tools to use and in what order.
+Connects Claude Code to your [Ranksmile](https://tryranksmile.com) account through the Ranksmile MCP server, and adds seven SEO workflows that tell the assistant which tools to use and in what order.
 
 ## Install
 
@@ -15,7 +15,7 @@ The first time the assistant uses Ranksmile, your browser opens a consent screen
 
 ## What you get
 
-**The MCP server** (`https://app.ranksmile.pl/mcp`): your workspaces, articles and their content scores, Auto-Optimize history, AI visibility (scores per topic and engine, the trend over scans, each prompt's answers, citations and fan-out, the pages the answers cite), recommended Actions, tracked keyword positions, Search Console performance, site audit results, brand notes and research log.
+**The MCP server** (`https://app.tryranksmile.com/mcp`): your workspaces, articles and their content scores, Auto-Optimize history, AI visibility (scores per topic and engine, the trend over scans, each prompt's answers, citations and fan-out, the pages the answers cite), recommended Actions, tracked keyword positions, Search Console performance, site audit results, brand notes and research log.
 
 **Seven skills:**
 

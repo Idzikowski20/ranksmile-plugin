@@ -5,14 +5,14 @@
   "description": "Your Ranksmile content scores, AI visibility, rankings, Search Console and site audit in your agent, with workflows that turn them into edits.",
   "author": {
     "name": "Ranksmile",
-    "url": "https://ranksmile.pl"
+    "url": "https://tryranksmile.com"
   },
-  "homepage": "https://ranksmile.pl",
+  "homepage": "https://tryranksmile.com",
   "keywords": ["seo", "content-score", "ai-visibility", "actions", "rank-tracking", "search-console", "site-audit"],
   "mcpServers": {
     "ranksmile": {
       "type": "http",
-      "url": "https://app.ranksmile.pl/mcp"
+      "url": "https://app.tryranksmile.com/mcp"
     }
   }
 }
