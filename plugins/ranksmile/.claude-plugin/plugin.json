@@ -1,13 +1,14 @@
 {
   "name": "ranksmile",
   "displayName": "Ranksmile",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Your Ranksmile content scores, AI visibility, rankings, Search Console and site audit in your agent, with workflows that turn them into edits.",
   "author": {
     "name": "Ranksmile",
     "url": "https://tryranksmile.com"
   },
   "homepage": "https://tryranksmile.com",
+  "license": "MIT",
   "keywords": ["seo", "content-score", "ai-visibility", "actions", "rank-tracking", "search-console", "site-audit"],
   "mcpServers": {
     "ranksmile": {
